@@ -11,7 +11,7 @@ using OpenQA.Selenium.Chrome;
 using System.Threading.Tasks;
 using NUnit.Framework;
 
-namespace ScheduleKPI
+namespace FirstTests
 {
     public class SeleniumTest
     {
@@ -61,7 +61,7 @@ namespace ScheduleKPI
                 {
                     if (rowTD[3].Text.Contains("Компоненти програмної інженерії 2. Якість та тестування програмного забезпечення"))
                     {
-                        // найдено вхождение
+                       
                         found = true;
                     }
                 }
