@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -35,6 +35,9 @@ namespace FirstTests
             element = CDriver.FindElement(By.CssSelector("#rso > div > div:nth-child(1) > div > div.tF2Cxc > div.yuRUbf > a"));
             element.Click();
 
+            element = CDriver.FindElement(By.Id("ctl00_lBtnSchedule"));
+            element.Click();
+
             element = CDriver.FindElement(By.Id("ctl00_MainContent_ctl00_txtboxGroup"));
             element.SendKeys("КП-93");
 
@@ -59,7 +62,7 @@ namespace FirstTests
                 }
                 else
                 {
-                    if (rowTD[3].Text.Contains("Компоненти програмної інженерії 2. Якість та тестування програмного забезпечення"))
+                    if(rowTD[3].Text.Contains("Компоненти програмної інженерії 2. Якість та тестування програмного забезпечення"))
                     {
                        
                         found = true;
@@ -85,12 +88,12 @@ namespace FirstTests
             element.SendKeys("Епіцентр");
             element.SendKeys(Keys.Enter);
 
-            element = CDriver.FindElement(By.CssSelector("#rso > div:nth-child(1) > div > div > div > div > div.yuRUbf > a"));
+            element = CDriver.FindElement(By.ClassName("Krnil"));
             element.Click();
 
 
             element = CDriver.FindElement(By.CssSelector("#footer-block > div.footer__info.container > div > div.footer__column.footer__column--xl > div:nth-child(1) > p.footer__block-info.footer__block-info--small"));
-            element.Click();
+          
 
             Debug.Assert(element.Text.Contains("з 07:30 до 22:30"));
 
