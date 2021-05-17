@@ -10,7 +10,6 @@ D:\Unik\QA\Lab3\ScheduleKPI\bin\Debug\nunit.framework.dll
 D:\Unik\QA\Lab3\ScheduleKPI\bin\Debug\WebDriver.dll
 D:\Unik\QA\Lab3\ScheduleKPI\bin\Debug\nunit.framework.xml
 D:\Unik\QA\Lab3\ScheduleKPI\bin\Debug\WebDriver.xml
-D:\Unik\QA\Lab3\ScheduleKPI\obj\Debug\FirstTests.csprojAssemblyReference.cache
 D:\Unik\QA\Lab3\ScheduleKPI\obj\Debug\FirstTests.csproj.CoreCompileInputs.cache
 D:\Unik\QA\Lab3\ScheduleKPI\obj\Debug\FirstTests.csproj.CopyComplete
 D:\Unik\QA\Lab3\ScheduleKPI\obj\Debug\ScheduleKPI.dll
