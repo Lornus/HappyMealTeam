@@ -121,7 +121,7 @@ Connect to 5s</stringProp>
             </elementProp>
             <elementProp name="COUNT" elementType="Argument">
               <stringProp name="Argument.name">COUNT</stringProp>
-              <stringProp name="Argument.value">2</stringProp>
+              <stringProp name="Argument.value">5</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="SEARCHING_VAR" elementType="Argument">
@@ -325,7 +325,7 @@ Connect to 5s</stringProp>
             <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="Get product id" enabled="true">
               <stringProp name="XPathExtractor.default">NOT_FOUND</stringProp>
               <stringProp name="XPathExtractor.refname">PRODUCT_ID</stringProp>
-              <stringProp name="XPathExtractor.matchNumber">1</stringProp>
+              <stringProp name="XPathExtractor.matchNumber">0</stringProp>
               <stringProp name="XPathExtractor.xpathQuery">//button[@class=&quot;button-1 add-to-cart-button&quot;]/@data-productid</stringProp>
               <boolProp name="XPathExtractor.validate">false</boolProp>
               <boolProp name="XPathExtractor.tolerant">true</boolProp>
@@ -484,6 +484,43 @@ Connect to 5s</stringProp>
           <hashTree/>
         </hashTree>
       </hashTree>
+      <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
       <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
